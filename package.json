@@ -1,0 +1,27 @@
+{
+  "name": "playwrightwithtypescriptswaglabsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test",
+    "test:smoke": "playwright test --grep @Smoke",
+    "test:headed": "playwright test --headed",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.7",
+    "allure-playwright": "^3.15.0",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10"
+  }
+}
